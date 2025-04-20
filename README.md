@@ -680,8 +680,8 @@ use Illuminate\Support\Facades\Route;
 44. first the public routes
 ```php
 //public routes
-Route::post('register', AuthController::class, 'register');
-Route::post('login', AuthController::class, 'login');
+Route::post('register', [AuthController::class, 'register']);
+Route::post('login', [AuthController::class, 'login']);
 ```
 45. then the private routes
 ```php
